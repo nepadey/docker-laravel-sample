@@ -1,3 +1,29 @@
+# Docker Laravel Sample
+
+### Getting Started with Setting up Environment
+
+```
+git clone git@github.com:anilnabin25/docker-laravel-sample.git
+cd docker-laravel-sample
+cp .env.sample .env
+docker-compose up -d
+```
+Now type *localhost:8088* and you will see the project running\
+Now run the below command to create a docker image
+ > divya@ubuntu:~/project/laravel$ docker-compose up -d
+
+As a final step, visit http://your_server_ip in the browser. You will see the following home page for your Laravel application:(if you are using in the locall http://localhost) if you change the port in the *ports* of webserver then  *:ports_no*  will be added
+
+Some of the usefull commands
+ > divya@ubuntu:\~/project/laravel$ docker ps => to check the currently running docker\
+ > divya@ubuntu:\~/project/laravel$ docker-compose up -d => to create docker container\
+ > divya@ubuntu:\~/project/laravel$ docker-compose exec app php artisan key:generate => to generate the artisan php key\
+ > divya@ubuntu:\~/project/laravel$ docker-compose exec app php artisan config:cache => to clear the configuration
+
+
+For more informatrion please click [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose)
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
