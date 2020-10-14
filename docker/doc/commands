@@ -1,0 +1,5 @@
+docker ps => to check the currently running docker
+docker-compose up -d => to create docker container
+docker-compose run app php artisan key:generate => to generate the artisan php key 
+docker-compose run app php artisan config:cache => to clear the configuration
+docker-compose run app php artisan migrate => to migrate the database
