@@ -8,11 +8,11 @@ cd docker-laravel-sample
 sh docker/setup.sh
 docker-compose up -d
 ```
-Now type *localhost:8088* and you will see the project running\
+Now type *localhost:8000* and you will see the project running and type *localhost:8001* and you will see the phpmyadmin running\
 Now run the below command to create a docker image
  > divya@ubuntu:~/project/laravel$ docker-compose up -d
 
-As a final step, visit http://your_server_ip in the browser. You will see the following home page for your Laravel application:(if you are using in the locall http://localhost) if you change the port in the *ports* of webserver then  *:ports_no*  will be added
+As a final step, visit http://your_server_ip in the browser. You will see the following home page for your Laravel application:(if you are using in the locall http://localhost) if you change the port in the *ports* of webserver then  *:ports_no*  will be added.For my localhost `http://localhost:8000` and for the phpmyadmin `http://localhost:8001`change the port no and username, password and try it 
 
 Some of the usefull commands
  > divya@ubuntu:\~/project/laravel$ docker ps => to check the currently running docker\

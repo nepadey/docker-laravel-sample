@@ -27,7 +27,7 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "8088:80"
+      - "8000:80"
       - "443:443"
     volumes:
       - ./:/var/www
@@ -56,10 +56,27 @@ services:
     networks:
       - app-network
 
+  # Phpmyadmin Service
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: your_mysql_root_password
+      PMA_PORT: 3306
+    restart: always
+    ports:
+      - 8001:80
+    networks:
+      - app-network
+
 #Docker Networks
 networks:
   app-network:
     driver: bridge
+
 #Volumes
 volumes:
   dbdata:
