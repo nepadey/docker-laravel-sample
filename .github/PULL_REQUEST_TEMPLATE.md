@@ -6,12 +6,12 @@
 
 ### List changes you made
 
-1. Removed `blablabla` column
+1. Removed `adsdsa` column
 2. 
 
 ### Explain why you made those changes
  
-1. Because we no longer need the column with the new feature implemeted in this PR
+1. Because we no longer need this with the new feature implemeted in this PR
 2. 
 
 ## Checklist

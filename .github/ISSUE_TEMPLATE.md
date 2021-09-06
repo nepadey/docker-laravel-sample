@@ -1,12 +1,12 @@
 ## Details
 
-- blablabla
+- adsda
 
 ## Branch name and dependency
 
 - feature/xxx
-- No dependency
+- dependency
 
 ## Note or Reference
 
-- blablabla
+- dasds
