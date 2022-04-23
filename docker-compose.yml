@@ -59,6 +59,20 @@ services:
     networks:
       - app-network
 
+  #node Service
+  npm:
+    image: node:16
+    container_name: npm
+    volumes:
+      - ./src:/var/www
+    ports:
+      - 3000:3000
+      - 3001:3001
+    working_dir: /var/www
+    entrypoint: ['npm']
+    networks:
+      - app-network
+
   # Phpmyadmin Service
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
